@@ -1,0 +1,86 @@
+<div class="container-fluid text-white" id="contact" >
+
+    <mat-card style="background-color: rgb(14, 38, 104); color: white;" >
+        <div class="text-center my-3">
+            <h2 class="my-2">
+                CONTACT
+            </h2>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 text-center">
+                <div class="boxx">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+
+                    <h3>Address</h3>
+                    <p>Borwand bk , <br>
+                        Post-Borwand bk Tq-Parbhani, <br>
+                        Dist-Parbhani, Maharashtra <br>
+                        431521
+                    </p>
+
+                </div>
+
+                <div class="boxx">
+
+                    <i class="fa-solid fa-phone"></i>
+
+
+                    <h3>Phone</h3>
+                    <p>
+                        <a href="tel:+91 9730893692" target="_blank">+91 9730893692</a>
+                    </p>
+
+                </div>
+
+                <div class="boxx">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+
+                    <h3>Email</h3>
+                    <p>
+                        <a href="mailto:pradipbkamble001@gmail.com" target="_blank">pradipbkamble001@gmail.com</a>
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="col-md-6 offset-md-1">
+                <div class="text-center my-3">
+                    <h2 class="my-2">
+                        CONTACT-ME
+                    </h2>
+
+                </div>
+                <mat-card-content>
+                    <form action="https://formspree.io/f/mrbzkqgn"
+                    method="POST" [formGroup]="contsctform" (ngSubmit)="onsubmitform()">
+
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" name="Fname" placeholder="Full Name" formControlName="Fname">
+                        </div>
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" name="Gmail" placeholder="Email Id" formControlName="Gmail">
+                        </div>
+                        <div class="form-group">
+
+                            <textarea rows="5" class="form-control" name="Message" placeholder="Message" formControlName="Message"></textarea>
+                        </div>
+
+                        <mat-card-footer class="m-2 text-center">
+                            <button mat-raised-button color="primary" type="submit">Submit</button>
+                        </mat-card-footer>
+                    </form>
+                </mat-card-content>
+            </div>
+        </div>
+    </mat-card>
+
+</div>
